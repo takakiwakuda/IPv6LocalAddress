@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-IPv6InterfaceId</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>IPv6InterfaceId</command:noun>
+      <maml:description>
+        <maml:para>Converts a MAC address to an Interface ID.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `ConvertTo-IPv6InterfaceId` cmdlet converts a MAC address to an Interface ID.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-IPv6InterfaceId</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>MacAddress</maml:name>
+          <maml:description>
+            <maml:para>Specifies the MAC Address to convert to an Interface ID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PhysicalAddress</command:parameterValue>
+          <dev:type>
+            <maml:name>PhysicalAddress</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>MacAddress</maml:name>
+        <maml:description>
+          <maml:para>Specifies the MAC Address to convert to an Interface ID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PhysicalAddress</command:parameterValue>
+        <dev:type>
+          <maml:name>PhysicalAddress</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Net.NetworkInformation.PhysicalAddress</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe a MAC Address to `ConvertTo-IPv6InterfaceId`.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Net.NetworkInformation.PhysicalAddress</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>`ConvertTo-IPv6InterfaceId` returns a PhysicalAddress object representing an Interface ID.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; ConvertTo-IPv6InterfaceId -MacAddress "00-22-44-66-88-AA"
+022244FFFE6688AA</dev:code>
+        <dev:remarks>
+          <maml:para>This example converts the string representing the MAC Address to an Interface ID.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-IPv6LocalAddress</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>IPv6LocalAddress</command:noun>
+      <maml:description>
+        <maml:para>Generates an IPv6 Local Address.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This `New-IPv6LocalAddress` cmdlet generates an IPv6 Local Address.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-IPv6LocalAddress</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>MacAddress</maml:name>
+          <maml:description>
+            <maml:para>Specifies the MAC Address.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PhysicalAddress</command:parameterValue>
+          <dev:type>
+            <maml:name>PhysicalAddress</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ScopeId</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Scope ID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+          <dev:type>
+            <maml:name>UInt32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SubnetId</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Subned ID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">UInt16</command:parameterValue>
+          <dev:type>
+            <maml:name>UInt16</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>MacAddress</maml:name>
+        <maml:description>
+          <maml:para>Specifies the MAC Address.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PhysicalAddress</command:parameterValue>
+        <dev:type>
+          <maml:name>PhysicalAddress</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ScopeId</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Scope ID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+        <dev:type>
+          <maml:name>UInt32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SubnetId</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Subned ID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">UInt16</command:parameterValue>
+        <dev:type>
+          <maml:name>UInt16</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Net.NetworkInformation.PhysicalAddress</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe a MAC Address to `New-IPv6LocalAddress`.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Net.IPAddress</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>`New-IPv6LocalAddress` returns an IPAddress object.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-IPv6LocalAddress -MacAddress "00-22-44-66-88-AA"
+AddressFamily      : InterNetworkV6
+ScopeId            : 0
+IsIPv6Multicast    : False
+IsIPv6LinkLocal    : False
+IsIPv6SiteLocal    : False
+IsIPv6Teredo       : False
+IsIPv4MappedToIPv6 : False
+Address            :
+IPAddressToString  : fd0f:1710:e9fd:0:222:44ff:fe66:88aa</dev:code>
+        <dev:remarks>
+          <maml:para>This example generates the IPv6 Local Address from the specified MAC Address.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>
