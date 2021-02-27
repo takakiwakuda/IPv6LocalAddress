@@ -11,7 +11,7 @@ $NtpEpochTime = [datetime]::new(1900, 1, 1, 0, 0, 0, [System.DateTimeKind]::Utc)
 
 function ConvertTo-IPv6InterfaceId {
     [CmdletBinding(
-        HelpUri = "https://github.com/takakiwakuda/IPv6LocalAddress/docs/ConvertTo-IPv6InterfaceId.md")]
+        HelpUri = "https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/ConvertTo-IPv6InterfaceId.md")]
     [OutputType([PhysicalAddress])]
     param (
         [Parameter(
@@ -31,7 +31,7 @@ function ConvertTo-IPv6InterfaceId {
 
 function New-IPv6LocalAddress {
     [CmdletBinding(
-        HelpUri = "https://github.com/takakiwakuda/IPv6LocalAddress/docs/New-IPv6LocalAddress.md")]
+        HelpUri = "https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/New-IPv6LocalAddress.md")]
     [OutputType([ipaddress])]
     param (
         [Parameter(
