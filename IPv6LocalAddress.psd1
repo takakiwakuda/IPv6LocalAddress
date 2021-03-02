@@ -30,7 +30,7 @@
     Copyright            = '(c) Takaki Wakuda. All rights reserved.'
 
     # Description of the functionality provided by this module
-    Description          = 'Create Interface IDs and IPv6 Local Addresses'
+    Description          = 'Creates Interface IDs and IPv6 Local Addresses.'
 
     # Minimum version of the PowerShell engine required by this module
     PowerShellVersion    = '5.1'
