@@ -1,7 +1,7 @@
 ---
 external help file: IPv6LocalAddress-help.xml
 Module Name: IPv6LocalAddress
-online version:
+online version: https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/New-IPv6LocalAddress.md
 schema: 2.0.0
 ---
 
