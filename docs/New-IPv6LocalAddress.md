@@ -106,7 +106,7 @@ You can pipe a MAC Address to `New-IPv6LocalAddress`.
 
 ### System.Net.IPAddress
 
-`New-IPv6LocalAddress` returns an `IPAddress` object.
+`New-IPv6LocalAddress` returns an IPAddress object.
 
 ## NOTES
 

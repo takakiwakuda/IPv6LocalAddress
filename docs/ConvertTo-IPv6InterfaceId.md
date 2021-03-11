@@ -64,7 +64,7 @@ You can pipe a MAC Address to `ConvertTo-IPv6InterfaceId`.
 
 ### System.Net.NetworkInformation.PhysicalAddress
 
-`ConvertTo-IPv6InterfaceId` returns a `PhysicalAddress` object representing an Interface ID.
+`ConvertTo-IPv6InterfaceId` returns a PhysicalAddress object representing an Interface ID.
 
 ## NOTES
 

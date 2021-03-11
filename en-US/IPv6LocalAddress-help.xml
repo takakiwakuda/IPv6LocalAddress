@@ -59,7 +59,7 @@
           <maml:name>System.Net.NetworkInformation.PhysicalAddress</maml:name>
         </dev:type>
         <maml:description>
-          <maml:para>`ConvertTo-IPv6InterfaceId` returns a `PhysicalAddress` object representing an Interface ID.</maml:para>
+          <maml:para>`ConvertTo-IPv6InterfaceId` returns a PhysicalAddress object representing an Interface ID.</maml:para>
         </maml:description>
       </command:returnValue>
     </command:returnValues>
@@ -196,7 +196,7 @@
           <maml:name>System.Net.IPAddress</maml:name>
         </dev:type>
         <maml:description>
-          <maml:para>`New-IPv6LocalAddress` returns an `IPAddress` object.</maml:para>
+          <maml:para>`New-IPv6LocalAddress` returns an IPAddress object.</maml:para>
         </maml:description>
       </command:returnValue>
     </command:returnValues>
