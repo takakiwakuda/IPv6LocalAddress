@@ -8,20 +8,23 @@ schema: 2.0.0
 # ConvertTo-IPv6InterfaceId
 
 ## SYNOPSIS
+
 Converts a MAC address to an Interface ID.
 
 ## SYNTAX
 
-```
+```powershell
 ConvertTo-IPv6InterfaceId [-MacAddress] <PhysicalAddress> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+
 The `ConvertTo-IPv6InterfaceId` cmdlet converts a MAC address to an Interface ID.
 
 ## EXAMPLES
 
 ### Example 1
+
 ```powershell
 PS C:\> ConvertTo-IPv6InterfaceId -MacAddress "00-22-44-66-88-AA"
 022244FFFE6688AA
@@ -32,6 +35,7 @@ This example converts the string representing the MAC Address to an Interface ID
 ## PARAMETERS
 
 ### -MacAddress
+
 Specifies the MAC Address to convert to an Interface ID.
 
 ```yaml
@@ -47,6 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -59,8 +64,10 @@ You can pipe a MAC Address to `ConvertTo-IPv6InterfaceId`.
 
 ### System.Net.NetworkInformation.PhysicalAddress
 
-`ConvertTo-IPv6InterfaceId` returns a PhysicalAddress object representing an Interface ID.
+`ConvertTo-IPv6InterfaceId` returns a `PhysicalAddress` object representing an Interface ID.
 
 ## NOTES
 
 ## RELATED LINKS
+
+[New-IPv6LocalAddress](https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/New-IPv6LocalAddress.md)

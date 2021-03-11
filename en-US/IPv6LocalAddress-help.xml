@@ -59,7 +59,7 @@
           <maml:name>System.Net.NetworkInformation.PhysicalAddress</maml:name>
         </dev:type>
         <maml:description>
-          <maml:para>`ConvertTo-IPv6InterfaceId` returns a PhysicalAddress object representing an Interface ID.</maml:para>
+          <maml:para>`ConvertTo-IPv6InterfaceId` returns a `PhysicalAddress` object representing an Interface ID.</maml:para>
         </maml:description>
       </command:returnValue>
     </command:returnValues>
@@ -82,6 +82,10 @@
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
         <maml:uri>https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/ConvertTo-IPv6InterfaceId.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-IPv6LocalAddress</maml:linkText>
+        <maml:uri>https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/New-IPv6LocalAddress.md</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -192,7 +196,7 @@
           <maml:name>System.Net.IPAddress</maml:name>
         </dev:type>
         <maml:description>
-          <maml:para>`New-IPv6LocalAddress` returns an IPAddress object.</maml:para>
+          <maml:para>`New-IPv6LocalAddress` returns an `IPAddress` object.</maml:para>
         </maml:description>
       </command:returnValue>
     </command:returnValues>
@@ -205,6 +209,7 @@
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; New-IPv6LocalAddress -MacAddress "00-22-44-66-88-AA"
+
 AddressFamily      : InterNetworkV6
 ScopeId            : 0
 IsIPv6Multicast    : False
@@ -223,6 +228,10 @@ IPAddressToString  : fd0f:1710:e9fd:0:222:44ff:fe66:88aa</dev:code>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
         <maml:uri>https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/New-IPv6LocalAddress.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>ConvertTo-IPv6InterfaceId</maml:linkText>
+        <maml:uri>https://github.com/takakiwakuda/IPv6LocalAddress/blob/main/docs/ConvertTo-IPv6InterfaceId.md</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
