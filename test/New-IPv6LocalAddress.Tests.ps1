@@ -21,7 +21,7 @@ Describe "New-IPv6LocalAddress" {
             $iid = [PhysicalAddress]::new($addressBytes[8..15])
 
             # Returns MAC Address, Subnet ID, Scope ID
-            (GetMacAddress $iid), ([ushort]$addressBytes[6] -shl 8 -bor $addressBytes[7]), $IPAddress.ScopeId
+            (GetMacAddress $iid), ([UInt16]$addressBytes[6] -shl 8 -bor $addressBytes[7]), $IPAddress.ScopeId
         }
 
         function GetMacAddress {
